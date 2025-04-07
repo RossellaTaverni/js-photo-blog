@@ -1,4 +1,5 @@
-header{
+/* HEADER */
+header {
     height: 90px;
     background-image: url(../assets_day1/img/wall.png);
     background-size: 400px;
@@ -7,8 +8,58 @@ header{
     align-items: center;
 }
 
-h1{
-    font-family: Edu Tas Beginner, sans-serif;
+h1 {
+    font-family: 'Edu Tas Beginner', sans-serif;
     font-size: xxx-large;
     font-weight: 700;
+}
+
+/* MAIN */
+main {
+    background-image: url(../assets_day1/img/cork.png);
+    background-size: 500px;
+}
+
+/* LAYOUT */
+.container {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.col{
+    display: flex;
+    justify-content: center;
+}
+
+.rectangle {
+    width: 290px;
+    height: 330px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.square {
+    width: 250px;
+    height: 250px;
+    background-color: blueviolet;
+    margin-bottom: 10px;
+}
+
+/* TEXT STYLE */
+.title {
+    font-family: 'Edu Tas Beginner', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.date {
+    font-family: 'Sometype Mono', monospace;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    color: #7c7c7c;
 }
