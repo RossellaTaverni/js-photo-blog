@@ -77,3 +77,43 @@ main {
     font-weight: bolder;
     color: #7c7c7c;
 }
+
+/* OVERLAY */
+/* Overlay che copre tutta la finestra */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  /* Contenuto dell'overlay */
+  .overlay-content {
+    background: white;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .overlay-content img {
+    max-width: 600px;
+    height: auto;
+  }
+  
+  /* Bottone per chiudere */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    left: 46%;
+    border-radius: 10px;
+    width: 80px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 30px;
+  }

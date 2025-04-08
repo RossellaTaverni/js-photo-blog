@@ -22,3 +22,10 @@ axios.get(endpoint).then((resp) => {
   });
 });
 
+// Vado a recuperare gli elementi che mi occorrono per l'overlay
+const overlay = document.getElementById('overlay');
+const closeBtn = document.querySelector('.close-btn');
+
+closeBtn.addEventListener('click', function(){
+    overlay.style.display = 'none';
+})
