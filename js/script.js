@@ -1,5 +1,5 @@
 const endpoint = 'https://lanciweb.github.io/demo/api/pictures/';
-const squareElements = document.querySelectorAll('.square');
+const squareElements = document.querySelectorAll('.square'); //Recupero immagine
 const titleElements = document.querySelectorAll('.title');
 const dateElements = document.querySelectorAll('.date');
 
@@ -29,3 +29,18 @@ const closeBtn = document.querySelector('.close-btn');
 closeBtn.addEventListener('click', function(){
     overlay.style.display = 'none';
 })
+
+/* squareElements.addEventListener('click', function(){
+    overlay.style.display = 'flex';
+}) 
+Non funziona in quanto squareElements è una NodeList, ossia un array di elementi, e addEventListener non è disponibile su tutta la lista di nodi contemporaneamente. */
+
+squareElements.forEach(square => {
+    square.addEventListener('click', () => {
+      overlay.style.display = 'flex';
+    });
+  });
+
+/* SquareElements è una NodeList che contiene tutti gli elementi HTML con la classe .square
+.forEach scorre ogni elemento uno per uno e lo chiama square. */
+  
